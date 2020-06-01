@@ -17,9 +17,6 @@ def url_to_image(url):
 
 currentIMG = url_to_image(cam1)
 if detect_mouth.main(currentIMG):
-    #SMS_Sender.main('1234567890', 'Your mouth is open')
     print("test mouth")
 if not detect_blinks.main(currentIMG):
-    #SMS_Sender.main('1234567890', 'Your eyes are closed')
     print("test eye")
-
